@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Get Request App3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section id="container">
+        <h1>Dog API: Simple GET Request</h1>
+        <form id="dog-breed-form">
+            <div class="form-group">
+                <h3>What breed of dog would you like to see?</h3>
+                <input type="text"
+                id="breed-dog"
+                class="form-control"
+                placeholder="example: hound, pug"
+                required
+                />
+            </div>
+            <div class="button">
+                <input
+                type="submit"
+                id="get"
+                value="Get Dog Photo!"
+                />
+            </div>
+            <div class="results hidden">
+                    <h2>Here is your dog!</h2>
+                    <img class="results-img" alt="requested dog images">
+            </div>
+        </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
